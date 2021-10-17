@@ -3,6 +3,7 @@ let min = 1,
     max = 10,
     winningNum = getRandomNum(min, max),
     guessesLeft = 3;
+    
 
 //UI Elements   
 const game = document.getElementById('game'),
@@ -14,8 +15,8 @@ const game = document.getElementById('game'),
     hint = document.querySelector('.hint');
 
 //Assigning the min and max
-minNum.textContent = min;
-maxNum.textContent = max;
+ minNum.textContent = min;
+ maxNum.textContent = max;
 
 game.addEventListener('mousedown', function (e) {
     if (e.target.className === 'play-again') {
